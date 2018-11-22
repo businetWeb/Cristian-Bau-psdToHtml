@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="Grondona Descripción">
+        <title>Cristian Bau</title>
+        <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/vendors/font-awesome/css/all.min.css">
+        <link rel="stylesheet" href="./assets/vendors/slick/slick.css">
+        <link rel="stylesheet" href="./assets/vendors/slick/slick-theme.css">
+        <link rel="stylesheet" href="./assets/vendors/jquery-ui/jquery-ui.min.css">
+        <link rel="stylesheet" href="./assets/vendors/jquery-ui/jquery-ui.theme.min.css">
+        <link rel="stylesheet" href="./assets/vendors/lightgallery/css/lightgallery.min.css">
+        <link rel="stylesheet" href="./assets/css/creative.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="bars-toggler"><i class="fas fa-bars"></i><i class="fas fa-times"></i></a>
+            <div class="navigation-header fixed-top">
+                <div class="topbar">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <ul class="nav menu">
+                                <li class="nav-item active">
+                                    <a class="nav-link"><i class="fas fa-map-marker-alt"></i> NORDELTA | CALLE DEL CAMINANTE 20</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="tel: +613 8376 6284"><i class="fas fa-phone-volume"></i> +613 8376 6284</a>
+                                </li>
+                            </ul>
+                            <ul class="nav social ml-lg-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-mobile d-lg-none text-center px-4 py-3">
+                    <a class="logo"><img src="./assets/img/logo.png"></a>
+                </div>
+                <div class="navigation">
+                    <div class="container-fluid">
+                        <div class="row no-gutters align-items-center">
+                            <a class="logo"><img src="./assets/img/logo.png"></a>
+                            <ul class="nav ml-lg-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Inmuebles</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Emprendimientos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tasaciones</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sucursales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="banner">
+            <div class="caption">
+                <div class="top">
+                    <div class="precio">
+                        USD 3.3356.254
+                    </div>
+                    <div class="tipo">Venta</div>
+                </div>
+                <div class="descripcion">
+                    <h3>Tipas | Casa 5 dormitorios</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut </p>
+                </div>
+            </div>
+            <img class="img" src="./assets/img/banner.jpg">
+        </section>
+        <section id="buscador">
+            <div class="container-fluid">
+                <form>
+                    <div class="row contenido no-gutters align-items-center">
+                        <div class="col-12 col-lg-3">
+                            <div class="toggle-radio mb-5 mb-lg-0">
+                                <input type="radio" name="tipo" value="venta" checked="ckecked">
+                                <a href="#" data-select="venta" class="activo">Venta</a>
+                                <input type="radio" name="tipo" value="alquiler">
+                                <a href="#" data-select="alquiler">alquiler</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-7 pl-lg-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <select>
+                                        <option selected disabled>Tipo de Inmuebles</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <select>
+                                        <option selected disabled>Ubicación</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 px-3">
+                            <input type="submit" value="BUSCAR">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="destacados" class="bg-gray-100">
+            <div class="container">
+                <h3 class="text-center mb-5">INMUEBLES DESTACADOS</h3>
+                <div class="lista-departamentos">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-5">
+                            <div class="item">
+                                <div class="header">
+                                    <p>Casa | av. Santa Fe 1515</p>
+                                </div>
+                                <div class="imagen">
+                                    <img class="img" src="assets/img/img1.jpg">
+                                    <span class="cat">Venta</span>
+                                </div>
+                                <div class="caption">
+                                    <div class="row no-gutters mb-2">
+                                        <div class="col-6 text-center text-lg-left"><i class="fas fa-map-marker-alt"></i> PALERMO</div>
+                                        <div class="col-6 text-center text-lg-right ml-lg-auto"> <i class="fas fa-ruler-combined"></i> 134 M2</div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-6 col-lg-9 text-center text-lg-left">
+                                                <span class="icon"><i class="fas fa-bed"></i> 1</span>
+                                                <span class="icon"><i class="fas fa-bath"></i> 2</span>
+                                                <span class="icon"><i class="fas fa-car"></i> 1</span>
+                                                <span class="icon"><i class="fas fa-dumbbell"></i> 1</span>
+                                            </div>
+                                        <div class="col-6 col-lg-3 text-center text-lg-right ml-auto precio"> $ 870000</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-5">
+                            <div class="item">
+                                <div class="header">
+                                    <p>Casa | av. Santa Fe 1515</p>
+                                </div>
+                                <div class="imagen">
+                                    <img class="img" src="assets/img/img1.jpg">
+                                    <span class="cat">Venta</span>
+                                </div>
+                                <div class="caption">
+                                    <div class="row no-gutters mb-2">
+                                        <div class="col-6 text-center text-lg-left"><i class="fas fa-map-marker-alt"></i> PALERMO</div>
+                                        <div class="col-6 text-center text-lg-right ml-lg-auto"> <i class="fas fa-ruler-combined"></i> 134 M2</div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-6 col-lg-9 text-center text-lg-left">
+                                                <span class="icon"><i class="fas fa-bed"></i> 1</span>
+                                                <span class="icon"><i class="fas fa-bath"></i> 2</span>
+                                                <span class="icon"><i class="fas fa-car"></i> 1</span>
+                                                <span class="icon"><i class="fas fa-dumbbell"></i> 1</span>
+                                            </div>
+                                        <div class="col-6 col-lg-3 text-center text-lg-right ml-auto precio"> $ 870000</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-5">
+                            <div class="item">
+                                <div class="header">
+                                    <p>Casa | av. Santa Fe 1515</p>
+                                </div>
+                                <div class="imagen">
+                                    <img class="img" src="assets/img/img1.jpg">
+                                    <span class="cat">Venta</span>
+                                </div>
+                                <div class="caption">
+                                    <div class="row no-gutters mb-2">
+                                        <div class="col-6 text-center text-lg-left"><i class="fas fa-map-marker-alt"></i> PALERMO</div>
+                                        <div class="col-6 text-center text-lg-right ml-lg-auto"> <i class="fas fa-ruler-combined"></i> 134 M2</div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-6 col-lg-9 text-center text-lg-left">
+                                                <span class="icon"><i class="fas fa-bed"></i> 1</span>
+                                                <span class="icon"><i class="fas fa-bath"></i> 2</span>
+                                                <span class="icon"><i class="fas fa-car"></i> 1</span>
+                                                <span class="icon"><i class="fas fa-dumbbell"></i> 1</span>
+                                            </div>
+                                        <div class="col-6 col-lg-3 text-center text-lg-right ml-auto precio"> $ 870000</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mb-5">
+                            <div class="item">
+                                <div class="header">
+                                    <p>Casa | av. Santa Fe 1515</p>
+                                </div>
+                                <div class="imagen">
+                                    <img class="img" src="assets/img/img1.jpg">
+                                    <span class="cat">Venta</span>
+                                </div>
+                                <div class="caption">
+                                    <div class="row no-gutters mb-2">
+                                        <div class="col-6 text-center text-lg-left"><i class="fas fa-map-marker-alt"></i> PALERMO</div>
+                                        <div class="col-6 text-center text-lg-right ml-lg-auto"> <i class="fas fa-ruler-combined"></i> 134 M2</div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-6 col-lg-9 text-center text-lg-left">
+                                                <span class="icon"><i class="fas fa-bed"></i> 1</span>
+                                                <span class="icon"><i class="fas fa-bath"></i> 2</span>
+                                                <span class="icon"><i class="fas fa-car"></i> 1</span>
+                                                <span class="icon"><i class="fas fa-dumbbell"></i> 1</span>
+                                            </div>
+                                        <div class="col-6 col-lg-3 text-center text-lg-right ml-auto precio"> $ 870000</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-5">
+                            <div class="item">
+                                <div class="header">
+                                    <p>Casa | av. Santa Fe 1515</p>
+                                </div>
+                                <div class="imagen">
+                                    <img class="img" src="assets/img/img1.jpg">
+                                    <span class="cat">Venta</span>
+                                </div>
+                                <div class="caption">
+                                    <div class="row no-gutters mb-2">
+                                        <div class="col-6 text-center text-lg-left"><i class="fas fa-map-marker-alt"></i> PALERMO</div>
+                                        <div class="col-6 text-center text-lg-right ml-lg-auto"> <i class="fas fa-ruler-combined"></i> 134 M2</div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-6 col-lg-9 text-center text-lg-left">
+                                                <span class="icon"><i class="fas fa-bed"></i> 1</span>
+                                                <span class="icon"><i class="fas fa-bath"></i> 2</span>
+                                                <span class="icon"><i class="fas fa-car"></i> 1</span>
+                                                <span class="icon"><i class="fas fa-dumbbell"></i> 1</span>
+                                            </div>
+                                        <div class="col-6 col-lg-3 text-center text-lg-right ml-auto precio"> $ 870000</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-5">
+                            <div class="item">
+                                <div class="header">
+                                    <p>Casa | av. Santa Fe 1515</p>
+                                </div>
+                                <div class="imagen">
+                                    <img class="img" src="assets/img/img1.jpg">
+                                    <span class="cat">Venta</span>
+                                </div>
+                                <div class="caption">
+                                    <div class="row no-gutters mb-2">
+                                        <div class="col-6 col-lg-6 text-center text-lg-left"><i class="fas fa-map-marker-alt"></i> PALERMO</div>
+                                        <div class="col-6 col-lg-6 text-center text-lg-right ml-lg-auto"> <i class="fas fa-ruler-combined"></i> 134 M2</div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-6 col-lg-9 text-center text-lg-left">
+                                                <span class="icon"><i class="fas fa-bed"></i> 1</span>
+                                                <span class="icon"><i class="fas fa-bath"></i> 2</span>
+                                                <span class="icon"><i class="fas fa-car"></i> 1</span>
+                                                <span class="icon"><i class="fas fa-dumbbell"></i> 1</span>
+                                            </div>
+                                        <div class="col-6 col-lg-3 text-center text-lg-right ml-auto precio"> $ 870000</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row contador mt-5">
+                    <div class="col-6 col-lg-3 bordes mb-5">
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <i class="fa fa-store"></i>
+                            <hr>
+                            <span class="texto text-uppercase">Departamentos</span>
+                            <span class="numero">2518</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 bordes mb-5">
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <i class="fa fa-home"></i>
+                            <hr>
+                            <span class="texto text-uppercase">Casas</span>
+                            <span class="numero">2518</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 bordes mb-5">
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <hr>
+                            <span class="texto text-uppercase">Lotes</span>
+                            <span class="numero">2518</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 bordes mb-5">
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <i class="fa fa-building"></i>
+                            <hr>
+                            <span class="texto text-uppercase">Oficinas</span>
+                            <span class="numero">2518</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="emprendimientos" class="pt-5 pb-0">
+            <div class="container">
+                <h3 class="text-uppercase text-center mb-5">Emprendimientos</h3>
+            </div>
+            <div class="emprendimientos-slider mb-0">
+                <div class="item">
+                    <div class="caption">
+                        <h3 class="titulo">Terrazas de donado</h3>
+                        <p class="texto">Departamentos 1, 2 y 3 ambientes</p>
+                        <a href="#" class="btn btn3">En pozo</a>
+                    </div>
+                    <img class="fondo" src="assets/img/img2.jpg">
+                </div>
+                <div class="item">
+                    <div class="caption">
+                        <h3 class="titulo">Terrazas de donado</h3>
+                        <p class="texto">Departamentos 1, 2 y 3 ambientes</p>
+                        <a href="#" class="btn btn3">En pozo</a>
+                    </div>
+                    <img class="fondo" src="assets/img/img2.jpg">
+                </div>
+            </div>
+        </section>
+        <section id="busca-por-zona" class="bg-gray-100 py-5">
+            <div class="container">
+                <h3 class="text-center text-uppercase mb-5">Buscá por zona</h3>
+                <div class="row zonas">
+                    <div class="col-lg-5">
+                        <a href="#" class="zona">
+                            <div class="caption">
+                                <span>RECOLETA</span>
+                            </div>
+                            <img class="fondo" src="assets/img/img5.jpg">
+                        </a>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row h-lg-50 pb-lg-3">
+                            <div class="col-lg-4">
+                                <a href="#" class="zona">
+                                    <div class="caption">
+                                        <span>RECOLETA</span>
+                                    </div>
+                                    <img class="fondo" src="assets/img/img5.jpg">
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="zona">
+                                    <div class="caption">
+                                        <span>RECOLETA</span>
+                                    </div>
+                                    <img class="fondo" src="assets/img/img5.jpg">
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="zona">
+                                    <div class="caption">
+                                        <span>RECOLETA</span>
+                                    </div>
+                                    <img class="fondo" src="assets/img/img5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row h-lg-50 pt-lg-3">
+                            <div class="col-12">
+                                <a href="#" class="zona">
+                                    <div class="caption">
+                                        <span>RECOLETA</span>
+                                    </div>
+                                    <img class="fondo" src="assets/img/img5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto-cta">
+            <div class="texto">
+                <p>Tasamos y vendemos tu inmueble</p>
+            </div>
+            <div class="formulario">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Email">
+                    </div>
+                    <div class="form-group submit">
+                        <input type="submit" placeholder="enviar">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="que-estas-buscando">
+            <div class="container-fluid">
+                <h3 class="text-center text-uppercase mb-5">¿Qué estas buscando?</h3>
+                <div class="row no-gutters">
+                    <div class="col-12 col-lg-3 mb-5">
+                        <a class="item" href="#">
+                            <span class="caption">
+                                Barrios cerrados
+                            </span>
+                            <div class="overlay"></div>
+                            <img class="fondo" src="./assets/img/img7.jpg">
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-3 mb-5">
+                        <a class="item" href="#">
+                            <span class="caption">
+                                Barrios cerrados
+                            </span>
+                            <div class="overlay"></div>
+                            <img class="fondo" src="./assets/img/img7.jpg">
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-3  mb-5">
+                        <a class="item" href="#">
+                            <span class="caption">
+                                Barrios cerrados
+                            </span>
+                            <div class="overlay"></div>
+                            <img class="fondo" src="./assets/img/img7.jpg">
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <a class="item" href="#">
+                            <span class="caption">
+                                Barrios cerrados
+                            </span>
+                            <div class="overlay"></div>
+                            <img class="fondo" src="./assets/img/img7.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact-info">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-12 col-lg-3">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Pilar
+                                    </a>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Av. Libertador 333<br>
+                                    011 6851 8284<br>
+                                    119 5643 2243<br>
+                                    palermo@cristianbau.com.ar
+                                </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <a class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Recoleta
+                                    </a>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Av. Libertador 333<br>
+                                    011 6851 8284<br>
+                                    119 5643 2243<br>
+                                    palermo@cristianbau.com.ar
+                                </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <a class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Nordelta
+                                    </a>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                        Av. Libertador 333<br>
+                                        011 6851 8284<br>
+                                        119 5643 2243<br>
+                                        palermo@cristianbau.com.ar
+                                </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <a class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#headingFour" aria-expanded="false" aria-controls="headingFour">
+                                        San Diego
+                                    </a>
+                                </div>
+                                <div id="headingFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                        Av. Libertador 333<br>
+                                        011 6851 8284<br>
+                                        119 5643 2243<br>
+                                        palermo@cristianbau.com.ar
+                                </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <a class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#headingFive" aria-expanded="false" aria-controls="headingFive">
+                                        Palermo
+                                    </a>
+                                </div>
+                                <div id="headingFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                        Av. Libertador 333<br>
+                                        011 6851 8284<br>
+                                        119 5643 2243<br>
+                                        palermo@cristianbau.com.ar
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 text-center">
+                        <div class="img-back">
+                            <img src="assets/img/sede.jpg" class="img">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="mapa-container">
+                            <div class="caption">Como llegar</div>
+                            <div class="mapa">
+                                <img src="assets/img/mapa.jpg" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                
+        <footer>
+            <div class="container logo">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-md-4 col-lg-3 px-5 px-lg-0">
+                        <img src="./assets/img/logo.png">
+                    </div>
+                </div>
+            </div>
+            <div class="menus">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Inmuebles</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Emprendimientos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tasaciones</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                     <div class="row texto">
+                        <p>Para los casos de alquiler de vivienda, el monto máximo de comisión que se le puede requerir a los propietarios será el equivalente al cuatro con quince centésimos por ciento (4,15%) del valor total del respectivo contrato. Se encuentra prohibido cobrar a los inquilinos que sean personas físicas comisiones inmobiliarias y gastos de gestoría de informes.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="flotantes">
+                <a class="whatsapp" href="#">
+                    <img src="assets/img/whatsapp-icon.png">
+                </a>
+                <a class="tasa" href="#">
+                    <img src="assets/img/tasaaqui-icon.png">
+                </a>
+            </div>
+        </footer>
+        <script src="./assets/vendors/jquery/jquery-3.3.1.min.js"></script>
+        <script src="./assets/vendors/jquery-ui/jquery-ui.min.js"></script>
+            <script src="./assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+            <script src="./assets/vendors/font-awesome/js/all.min.js"></script>
+            <script src="./assets/vendors/slick/slick.min.js"></script>
+            <script src="./assets/vendors/lightgallery/js/lightgallery-all.min.js"></script>
+            <script src="./assets/js/scripts.js"></script>
+    </body>
+
+</html>

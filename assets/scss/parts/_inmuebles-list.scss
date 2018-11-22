@@ -1,0 +1,44 @@
+.lista-departamentos{
+    .item{
+        background-color: $white;
+        .header{
+            padding: 15px;
+            p{margin-bottom: 0}
+        }
+        .imagen{
+            position: relative;
+            height: 200px; overflow: hidden;
+            .img{
+                position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                min-width: 100%; min-height: 100%;
+                @include transition-all();
+            }
+            .cat{
+                position: absolute; top: 8px; right: 8px;
+                background-color: $primary; padding: 5px 15px;
+                border-radius: 3px;
+                color:$white; font-weight: 700; font-size: 14px; 
+                text-transform: uppercase;
+            }
+        }
+        .caption{
+            padding: 15px;
+            color:$gray-600;
+            font-size: 14px;
+            .precio{font-weight: 700; color:$gray-700;}
+            .icon{
+                margin-left: 7px;
+                &:first-child{
+                    margin-left: 0px;
+                }
+            }
+        }
+        &:hover{
+            .imagen{
+                .img{
+                    transform: translate(-50%, -50%) scale(1.1, 1.1) rotate(10deg);
+                }
+            }
+        }
+    }
+}

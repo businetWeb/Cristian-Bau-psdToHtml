@@ -1,0 +1,37 @@
+// Mixins
+@mixin serif-font(){
+  font-family: 'Poppins', sans-serif;
+}
+@mixin sans-serif-font(){
+  font-family: 'Poppins', sans-serif;
+}
+@mixin transition-all() {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+@mixin background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} 
+@mixin sombra($sombra){
+  -webkit-box-shadow: $sombra;
+  -moz-box-shadow: $sombra;
+  box-shadow: $sombra;
+}
+@mixin text-gradient-vertical($color1, $color2){
+  background: $color1; /* Old browsers */
+  background: -moz-linear-gradient(top, $color1 1%, $color2 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, $color1 1%,$color2 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, $color1 1%,$color2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin gradient-vertical($color1, $color2){
+  background: $color1; /* Old browsers */
+  background: -moz-linear-gradient(top, $color1 1%, $color2 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, $color1 1%,$color2 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, $color1 1%,$color2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

@@ -1,0 +1,87 @@
+#inmuebles-list-alt{
+    .item{
+        border:1px solid $gray-300;
+        @include transition-all();
+        &:hover{
+            border: 1px solid $primary;
+            .caption{
+                .foot{
+                    border-top:1px solid $primary;
+                    .link{
+                        border-right: 1px solid $primary;
+                    }
+                }
+            }
+        }
+        .imagen{
+            position: relative;
+            height: 280px; overflow: hidden;
+            img{
+                position: absolute; top:50%; left: 50%;
+                transform: translate(-50%, -50%);
+                min-width: 100%; min-height: 100%;
+            }
+            .item{
+                height: calc(280px - 20px);
+            }
+            .foot{
+                position: absolute; bottom: 0; left: 0;
+                width: 100%;
+                display: flex;
+                color:$white; font-weight: 700; text-transform: uppercase;
+                .tipo{
+                    padding: 10px;
+                    background-color: rgba($black, .7);
+                    flex-grow: 1; margin-bottom: 0;
+                }
+                .precio{
+                    padding: 10px;
+                    background-color: $primary;
+                    margin-bottom: 0;
+                }
+            }
+            @media (max-width:992px) {
+                height: 320px;
+            }
+        }
+        .caption{
+            display: flex;
+            flex-flow: column;
+            height: 100%;
+            .titulo{
+                padding: 30px 10px;
+                h3{font-size: 22px; margin-bottom: 5px; }
+                p{color: $gray-600; margin-bottom: 0}
+            }
+            .features{
+                margin-top: auto;
+                font-size: 12px;
+                color:$gray-600;
+                padding: 0 10px 20px 10px;;
+            }
+            .foot{
+                display: flex;
+                margin-top: auto;
+                border-top:1px solid $gray-400;
+                .link{
+                    padding: 10px; 
+                    border-right: 1px solid $gray-400;
+                    text-transform: uppercase;
+                    flex-grow: 1;
+                    color:$gray-600;
+                    font-weight: 600;
+                    &:hover{color:$primary}
+                }
+                .share{
+                    padding: 10px 15px;
+                    color:$gray-600;
+                    &:hover{color:$primary}
+                }
+            }
+        }
+    }
+    
+}
+.paginador{
+    a{font-size: 16px; font-weight: 700; padding: 10px; color:$gray-700; &:hover{color:$primary}}
+}

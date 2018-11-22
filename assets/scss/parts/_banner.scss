@@ -1,0 +1,52 @@
+#banner{
+    padding: 0;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+    .img{
+        position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%);
+        z-index: 1; min-width: 100%; min-height: 100%; max-width: none;
+    }
+    .caption{
+        position: absolute; top:50%; left:40px; transform: translateY(-60%);
+        z-index: 2; text-align: left; max-width: 500px;
+        .top{
+            display: flex; width: auto;
+        }
+        .precio{
+            background-color: $primary; color: $white;
+            font-weight: 700; font-size: 18px; padding: 5px 10px;
+        }
+        .tipo{
+            background-color: $gray-700; color: $white;
+            font-weight: 700; font-size: 18px; padding: 5px 10px;
+        }
+        .descripcion{
+            padding: 20px; background: $white;
+            h3{
+                color:$black; font-size: 20px;
+            }
+            p{margin-bottom: 0; font-size: 16px}
+        }
+    }
+    @media (max-width: 767px) {
+        height: 400px;
+        .caption{
+            left: 0px;
+            .precio{
+                font-size: 14px; padding: 3px 6px;
+            }
+            .tipo{
+                font-size: 14px; padding: 3px 6px;
+            }
+            .descripcion{
+                padding: 5px;
+                h3{
+                    font-size: 16px;
+                }
+                p{font-size: 14px}
+            }
+        }
+            
+    }
+}

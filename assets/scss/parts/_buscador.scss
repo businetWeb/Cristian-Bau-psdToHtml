@@ -1,0 +1,129 @@
+ #buscador{
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    .contenido{
+        background-color: $white;
+        .toggle-radio{
+            display: flex; position: relative;
+            justify-content: center; align-items: center;
+            height: 100px; cursor: pointer;
+            & *{position: relative;}
+            input[type="radio"]{width: 0; height: 0; opacity: 0;}
+            a{text-align: center; flex-grow: 1; font-weight: 700; text-transform: uppercase; color:$primary; &.activo{color:$white;}}
+            &:before{
+                content: '';
+                position: absolute; top:0; left:0px;
+                width:50%; height:100%;
+                background-color: $black; 
+                @include transition-all();
+                @include sombra(0px 0px 5px 0px rgba(0,0,0,0.55));
+            }
+            &.activo:before{
+                left:calc(50%);
+            }
+        }
+        select{
+            width: 100%; padding: 10px 15px;
+            background-color: #f2f2f2;
+        }
+        input[type="submit"]{
+            background-color: $primary;
+            width: 100%; border: 0px solid transparent;
+            color:$white; font-weight: 700;
+            padding: 10px 15px;
+            cursor: pointer;
+            @include transition-all();
+            &:hover{
+                background-color: $gray-700;
+                color: $white;
+            }
+        }
+    }
+    @media (max-width:991px) {
+        .skew-right{
+            overflow:hidden;
+        }
+        .select2-container{
+            width: 100% !important;
+            margin-bottom: 10px;
+            padding: 0 5px;
+        }
+    }
+}
+#buscador-interno{
+    background-color: $gray-100;
+    padding: 0;
+    .desplegable{
+        width:100%;
+        background-color: $gray-700;
+        color:$white;
+        padding: 8px;
+        border: 0px;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        &:hover{
+            background-color: $gray-600;
+        }
+        &:before{
+            position: absolute; z-index: 2; color:$white;
+            top:50%; right: 10px; transform: translateY(-50%);
+            font-family: 'Font Awesome 5 Free'; font-weight: 900;
+            content: '\f078';
+        }
+        &[aria-expanded="true"]:before{content: '\f077';}
+    }
+    .collapse{
+        padding: 40px 0;
+        
+    }
+    .orden{
+        color:$gray-500;
+        border:1px solid $gray-500;
+        padding: 10px 15px;
+        &:hover, &.activo{
+            color:$primary;
+            border:1px solid $primary;
+        }
+    }
+    @media (min-width: 992px) {
+        .col-lg-quinto{    
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+    }
+    
+    select{
+        width: 100%; padding: 10px 15px;
+        background-color: $white; border-color: transparent;
+    } 
+    input[type="submit"]{
+        background-color: $primary;
+        width: 100%; border: 0px solid transparent;
+        color:$white; font-weight: 700;
+        padding: 10px 15px;
+        cursor: pointer;
+        @include transition-all();
+        &:hover{
+            background-color: $gray-300;
+            color: $primary;
+        }
+    }
+    .rangoSlider{
+        .ui-widget-header{
+            background-color: $primary;
+        }
+        .ui-slider-horizontal{
+            height: 1px;
+            border: 1px solid $primary;
+            margin-top: 5px;
+        }
+        .ui-slider-handle{
+            border-radius: 50px;
+            border:1px solid $primary;
+            background-color: $primary;
+            margin-top: -4px;
+        }
+    }
+}
