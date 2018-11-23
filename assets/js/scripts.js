@@ -1,4 +1,22 @@
 $(window).on('load', function(){
+    //Sliders  
+    $('.emprendimientos-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll:1,
+        arrows: false,
+        dots: true
+    });
+    $('.slick-top').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll:1,
+        arrows: false,
+        dots: false,
+        vertical: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+    });
     $('.toggle-radio a').click(function(){
         var clicked = $(this).attr('data-select');
         $(this).closest('.toggle-radio').find('input[type="radio"]').each(function(){
@@ -40,9 +58,9 @@ $(window).on('load', function(){
     $('.bars-toggler').click(function(){
         if($(this).hasClass('activo')){
             $(this).removeClass('activo');
-            $('header .navigation-header .navigation').removeClass('d-block');
+            $('header .navigation-header .navigation').removeClass('activo');
         }else{
-            $('header .navigation-header .navigation').addClass('d-block');
+            $('header .navigation-header .navigation').addClass('activo');
             $(this).addClass('activo');
         } 
     });
@@ -70,13 +88,5 @@ $(window).on('load', function(){
     $('#galeria').lightGallery({
         thumbnail: true,
     }); 
-    //Sliders  
-    $('.emprendimientos-slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll:1,
-        arrows: false,
-        dots: true
-    });
-   
+    
 });

@@ -144,12 +144,13 @@ header{
         }
       }
       .navigation{
-        width: 100vw; position: fixed; top:0;
+        width: 100vw; position: fixed; top:0; left:100%;
         background-color: rgba($white, .9);
-        display: none;
         width: 100vw;
         height: 100vh;
         overflow-y: scroll;
+        @include transition-all();
+        &.activo{left: 0;}
         .container-fluid, .row{height: 100%;}
         .logo{display: block; width: 100%; margin-top: 10px; text-align: center;}
         .nav{
@@ -157,7 +158,12 @@ header{
           flex-flow: column;
           text-align: center;
           margin: 0 auto;
-          
+          .nav-item{
+            padding: 0;
+            .nav-link{
+              padding: 1rem;
+            }
+          }
         }
         .btn-right{
           margin: auto auto 0 auto;
