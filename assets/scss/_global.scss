@@ -460,3 +460,18 @@ footer{
   }
   
 }
+.form{
+  input, select, textarea{
+    width: 100%;
+    padding: 10px 20px;
+  }
+  input[type="submit"]{
+    background: $primary;
+    color:$white;
+    border: 0px;
+    cursor: pointer;
+    &:hover{
+      background: lighten($primary, 15%);
+    }
+  }
+}

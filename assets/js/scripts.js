@@ -1,5 +1,24 @@
 $(window).on('load', function(){
     //Sliders  
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav',
+        lazyLoad: 'ondemand',
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        focusOnSelect: true,
+        lazyLoad: 'ondemand',
+        centerMode: true,
+        variableWidth: true,
+        infinite: false,
+      });
     $('.emprendimientos-slider').slick({
         infinite: true,
         slidesToShow: 1,
@@ -44,13 +63,19 @@ $(window).on('load', function(){
     
     function headerSeparacion(){
         if($(window).width() > 992){
-            var headerHeight = $('header .navigation-header .topbar').height();
-            $('header').next().css('margin-top', headerHeight);
+            if($('header').hasClass('unmargin')){
+                var headerHeight = $('header .navigation-header').height();
+                $('header').next().css('margin-top', headerHeight);
+                
+            }else{
+                var headerHeight = $('header .navigation-header .topbar').height();
+                $('header').next().css('margin-top', headerHeight);
+            }
         }else{
             $('header').next().css('margin-top', '0');
         }
     }
-    headerSeparacion()
+    headerSeparacion();
     $(window).on('resize', function(){
         headerSeparacion();
     });

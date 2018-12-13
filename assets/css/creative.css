@@ -18,6 +18,10 @@
   background-color: #dee2e6;
 }
 
+.primary {
+  color: #9E182B !important;
+}
+
 body,
 html {
   width: 100%;
@@ -811,6 +815,22 @@ footer #flotantes .tasa:hover {
     min-height: 100%;
     max-width: initial;
   }
+}
+
+.form input, .form select, .form textarea {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.form input[type="submit"] {
+  background: #9E182B;
+  color: #fff;
+  border: 0px;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background: #de253f;
 }
 
 header .navigation-header .topbar {
@@ -1991,4 +2011,191 @@ header .bars-toggler .fa-times {
     z-index: 2;
     max-height: 400px;
   }
+}
+
+.unmargin .navigation-header .topbar {
+  background-color: #A8A8A8;
+}
+
+.unmargin .navigation-header .topbar .nav-link {
+  color: #000;
+}
+
+.unmargin .navigation-header .topbar .nav-link:hover {
+  color: #9E182B;
+}
+
+#slider-ficha {
+  height: 450px;
+  padding: 0;
+}
+
+#slider-ficha .slider-for .item {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+#slider-ficha .slider-for .item .img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  width: auto;
+  max-width: initial;
+  z-index: 2;
+}
+
+#slider-ficha .slider-for .item .img.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: auto 100%;
+  background-position: center;
+  z-index: 1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+#slider-ficha .slider-nav {
+  margin-top: -90px;
+}
+
+#slider-ficha .slider-nav .item {
+  width: 110px;
+  height: 60px;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#slider-ficha .slider-nav .item .img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 60px;
+  max-width: 110px;
+}
+
+#slider-ficha .slider-nav .item.slick-center {
+  outline: 2px solid #fff;
+  outline-offset: 5px;
+}
+
+#slider-ficha .slider-nav .slick-prev, #slider-ficha .slider-nav .slick-next {
+  border: 0px;
+  background-color: #9E182B;
+  border-radius: 100px;
+  bottom: 200px;
+}
+
+#slider-ficha .slider-nav .slick-prev:hover, #slider-ficha .slider-nav .slick-prev:focus, #slider-ficha .slider-nav .slick-next:hover, #slider-ficha .slider-nav .slick-next:focus {
+  background-color: #ca1f37;
+}
+
+#slider-ficha .slider-nav .slick-prev:hover:before, #slider-ficha .slider-nav .slick-prev:focus:before, #slider-ficha .slider-nav .slick-next:hover:before, #slider-ficha .slider-nav .slick-next:focus:before {
+  background-color: transparent;
+}
+
+#slider-ficha .slider-nav .slick-prev:before, #slider-ficha .slider-nav .slick-next:before {
+  content: '\f053';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #fff;
+  opacity: .8;
+}
+
+#slider-ficha .slider-nav .slick-prev:before:hover, #slider-ficha .slider-nav .slick-next:before:hover {
+  opacity: 1;
+}
+
+#slider-ficha .slider-nav .slick-prev {
+  left: 80px;
+}
+
+#slider-ficha .slider-nav .slick-prev:before {
+  content: '\f053';
+}
+
+#slider-ficha .slider-nav .slick-next {
+  right: 80px;
+}
+
+#slider-ficha .slider-nav .slick-next:before {
+  content: '\f054';
+}
+
+@media (max-width: 767px) {
+  #slider-ficha {
+    height: 250px;
+  }
+  #slider-ficha .slider-for .item {
+    height: 250px;
+  }
+  #slider-ficha .slider-nav .slick-prev {
+    left: 50px;
+  }
+  #slider-ficha .slider-nav .slick-next {
+    right: 50px;
+  }
+  #slider-ficha .slider-nav .slick-prev, #slider-ficha .slider-nav .slick-next {
+    bottom: 100px;
+  }
+}
+
+.estado-ficha {
+  justify-content: center;
+  position: relative;
+}
+
+.estado-ficha li {
+  margin: 0 10px;
+}
+
+.estado-ficha .item {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  color: #adb5bd;
+}
+
+.estado-ficha .item .numero {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 2px solid #adb5bd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.estado-ficha .item .texto {
+  font-size: 12px;
+}
+
+.estado-ficha .item .icono {
+  line-height: 1;
+}
+
+.estado-ficha .item.activo {
+  color: #FF0000;
+}
+
+.estado-ficha .item.activo .numero {
+  border: 2px solid #FF0000;
+}
+
+.estado-ficha:before {
+  position: absolute;
+  content: '';
+  border-top: 1px solid #adb5bd;
+  top: 20px;
+  width: 100%;
+  z-index: 1;
 }
